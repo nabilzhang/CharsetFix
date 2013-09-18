@@ -17,9 +17,8 @@
 
 	<description>Spring公共配置文件</description>
 
-	<aop:aspectj-autoproxy proxy-target-class="false" />
-	<context:load-time-weaver aspectj-weaving="autodetect"/>
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+	<context:load-time-weaver aspectj-weaving="autodetect" />
 	<context:component-scan base-package="me.nabil.demo"></context:component-scan>
-	
-	<bean id = "performenceAspectj" class="me.nabil.demo.aspectdemo.aspect.PerformenceAspect"></bean>
+
 </beans>
