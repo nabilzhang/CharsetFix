@@ -10,8 +10,9 @@
 </head>
 <h1>乱码转换</h1>
 <input type="text" name="name" id="name-text">
-<span>(输入乱码字符串，点击提交)</span>
 <button onclick="tijiao();">转换</button>
+<p><span>输入乱码字符串，点击提交，不要包含标点符号，特殊符号</span></p>
+
 <form id="name-form" action="" method="get">
 	<input type="hidden" name="name" id="name">
 </form>

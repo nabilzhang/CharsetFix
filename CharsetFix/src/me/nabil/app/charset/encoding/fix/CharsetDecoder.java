@@ -52,6 +52,12 @@ public class CharsetDecoder {
 		return retMap;
 	}
 
+	/**
+	 * 这里是根据正则表达式来判断是否已经转换正确
+	 * 
+	 * @param inputStr
+	 * @return
+	 */
 	private static boolean checkCN(String inputStr) {
 		Pattern p = Pattern.compile("^[\u4E00-\u9FA5a-zA-Z0-9_-]+$");
 		Matcher m = p.matcher(inputStr);
