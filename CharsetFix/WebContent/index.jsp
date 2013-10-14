@@ -16,6 +16,7 @@
 <form id="name-form" action="" method="get">
 	<input type="hidden" name="name" id="name">
 </form>
+<hr/>
 <script>
 	function tijiao() {
 		var xx = document.getElementById("name-text").value;
