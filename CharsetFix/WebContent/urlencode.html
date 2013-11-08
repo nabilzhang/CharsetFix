@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>URL编码解码</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<script type="text/javascript">
+	function encode() {
+		var text = document.getElementById("input").value;
+		var items = text.split("\n");
+		var result = "";
+		for (i=0;i<items.length;i++) {
+			result += encodeURIComponent(items[i]) + "<br/>";
+		}
+		document.getElementById("show").innerHTML = result;
+	}
+
+	function decode() {
+		var text = document.getElementById("input").value;
+		var items = text.split("\n");
+		var result = "";
+		for (i=0;i<items.length;i++) {
+			result += decodeURIComponent(items[i]) + "<br/>";
+		}
+		document.getElementById("show").innerHTML = result;
+	}
+</script>
+</head>
+
+<body>
+	<h1>URL编码解码</h1>
+	<hr />
+	<p>
+		<textarea rows="10" cols="90" id="input"></textarea>
+	</p>
+	<p>
+		<button onclick="encode();">编码</button>
+		<button onclick="decode();">解码</button>
+	</p>
+	<p id="show"></p>
+</body>
+</html>
